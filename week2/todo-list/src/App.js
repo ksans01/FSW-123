@@ -5,12 +5,6 @@ import Card from './Card.js'
 TodoList()
 function App() {
 
-  const appStyle = {
-    margin: 10,
-    display: 'inline',
-    textAlign: 'center',
-  }
-
   return (
     <div className = "wrapper">
       <p className = 'red' style={{background: 'red', width: 200}}><Card title = "Title 1" subtitle = "Sub Title 1" desc = "Hello World!" /></p>
