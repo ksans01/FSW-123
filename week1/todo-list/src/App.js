@@ -11,3 +11,7 @@ function App() {
 }
 
 export default App;
+
+
+// to run app type into terminal "npm start"
+// wait a minute for page to open up
