@@ -1,9 +1,10 @@
+import React from 'react';
 import './App.css';
 import RollDice from './RollDice.js'
 
 function App() {
   return (
-    <div>
+    <div className="App">
       <RollDice />
     </div>
   );
