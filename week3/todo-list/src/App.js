@@ -9,25 +9,38 @@ function App() {
 
   console.log(list)
 
-  const completeTodo = id => {
+  const completeTodo = (e) => { 
+    if(e) {
     const temporaryTodos = [...todos];
-    const index = temporaryTodos.findIndex(todo => todo.id);
-    temporaryTodos[index].isCompleted = !temporaryTodos[index].isCompleted; 
+    const index = temporaryTodos.findIndex(todo => todo.id === e);
+    let updatedTodo = {...temporaryTodos[index]};
+    if(updatedTodo.isComplete){
+      updatedTodo.isComplete = false}
+      else{
+        updatedTodo.isComplete = true
+      }    
+    temporaryTodos[index] = updatedTodo      
     setTodos(temporaryTodos);
-  }
+    console.log(todos)
+  }}
 
   const deleteTodo = (id) => {
-      const newTodos = todos.filter((todo) => todo.id !== id);
+      const temporaryTodos = [...todos];
+      const newTodos = temporaryTodos.filter((todo) => todo.id !== id);
       setTodos(newTodos)
   }
-
+  // render(){
+    const todolist = list.map(()=> {
+     return( <TodoList todos = {list} completeTodo={completeTodo} deleteTodo={deleteTodo} /> )
+    })
+  
   return (
     <>
-    <TodoList todos = {list} completeTodo={completeTodo} deleteTodo={deleteTodo} />
+    {todolist}
     </>
-);
+)}
   
-}
+// }
 
 export default App;
 
