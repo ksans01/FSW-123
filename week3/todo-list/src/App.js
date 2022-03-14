@@ -29,14 +29,10 @@ function App() {
       const newTodos = temporaryTodos.filter((todo) => todo.id !== id);
       setTodos(newTodos)
   }
-  // render(){
-    const todolist = list.map(()=> {
-     return( <TodoList todos = {list} completeTodo={completeTodo} deleteTodo={deleteTodo} /> )
-    })
   
   return (
     <>
-    {todolist}
+    <TodoList todos = {list} completeTodo={completeTodo} deleteTodo={deleteTodo} />
     </>
 )}
   
