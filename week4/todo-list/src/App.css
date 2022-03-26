@@ -7,12 +7,9 @@
   }
   
   body {
-    background: linear-gradient(
-      90deg,
-      rgba(48, 16, 255, 1) 0%,
-      rgba(100, 115, 255, 1) 100%
-    );
+    background: blue
   }
+
   .todo-app {
     display: flex;
     flex-direction: column;
@@ -54,11 +51,7 @@
     border-radius: 0 4px 4px 0;
     cursor: pointer;
     outline: none;
-    background: linear-gradient(
-      90deg,
-      rgba(17, 122, 255, 1) 0%,
-      rgba(20, 159, 255, 1) 100%
-    );
+    background: blue;
     color: white;
     text-transform: capitalize;
   }
@@ -75,11 +68,7 @@
     align-items: center;
     margin: 4px auto;
     color: white;
-    background: linear-gradient(
-      90deg,
-      rgba(20, 159, 255, 1) 0%,
-      rgba(17, 122, 255, 1) 100%
-    );
+    background: blue;
     padding: 16px;
     border-radius: 5px;
     width: 90%;
