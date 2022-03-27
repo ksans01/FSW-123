@@ -1,10 +1,12 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import GIFSearch from "./Api.js"
+import "./index.css";
 
-function App() {
+export default function App() {
+
   return (
-    <h1>Content</h1>
+    <>
+      <GIFSearch />
+    </>
   );
 }
-
-export default App;
